@@ -1,12 +1,12 @@
 package x5.Phone;
 
 public class Phone {
-    long number = 9996478812L;
+    long numberOfCall = 9996478812L;
     String model = "Samsung", name = "Alex";
     double weight = 0.254;
 
-    public Phone(long number, String model) {
-        this.number = number;
+    public Phone(long numberOfCall, String model) {
+        this.numberOfCall = numberOfCall;
         this.model = model;
     }
 
@@ -15,19 +15,26 @@ public class Phone {
 
     }
 
-    public Phone(long number, String model, double weight) {
+    public Phone(long numberOfCall, String model, double weight) {
         this(64465466, "Apple");
-        this.number = number;
+        this.numberOfCall = numberOfCall;
         this.model = model;
         this.weight = weight;
     }
 
 
     public void receiveCall() {
-        System.out.println("Звонит " + name);
+        this.numberOfCall += numberOfCall;
+        this.name += name;
+        System.out.println("Звонит " + numberOfCall + name);
     }
 
+    public void receiveCall(long numberOfCall, String name) {
+        this.numberOfCall += numberOfCall;
+        this.name += name;
+        System.out.println("Звонит " + numberOfCall+ " " + name);
+    }
     public void getNumber() {
-        System.out.println(number);
+        System.out.println(numberOfCall);
     }
 }
