@@ -1,4 +1,4 @@
-package com.company;
+package x5.Phone;
 
 
 
@@ -15,8 +15,7 @@ public class Main {
         System.out.println(copy2.weight);
         copy0.receiveCall();
         copy0.getNumber();
-        ;
-
+       // Phone methodPhone = new Phone(6465465, "Xiaomi");
 
     }
 }
