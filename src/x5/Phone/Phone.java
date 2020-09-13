@@ -1,3 +1,4 @@
+
 package x5.Phone;
 
 
@@ -60,4 +61,3 @@ public class Phone {
         System.out.println("Номера для сообщений " + numberOfCall0 + " " + numberOfCall1 + " " + numberOfCall2);
     }
 }
-
