@@ -1,15 +1,35 @@
 package partTwo.Animal;
 
-public class Horse {
-    String name = "Horse";
+public class Horse extends Animal {
+    String name = "Нюша", act = "ржёт", location = "в стойле", food = "овёс";
 
     public void eat() {
-        this.name += name;
-        System.out.println(name + " ест траву");
+
+        System.out.println(name + " ест " + food + " " + location);
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getAct() {
+        return act;
+    }
+
+    @Override
+    public String getLocation() {
+        return location;
+    }
+
+    @Override
+    public String getFood() {
+        return food;
     }
 
     public void makeNoise() {
-        this.name = name;
-        System.out.println(name + " создает шум");
+
+        System.out.println(name + " " + act + " " + location);
     }
 }
