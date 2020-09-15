@@ -14,17 +14,14 @@ public class Animal {
         for (int i = 0; i < animals.length; i++) {
             animal = animals[i];
             veterinarian.treatAnimal(animal);
-
         }
     }
 
     public void makeNoise() {
         System.out.println(name + " " + act);
-
     }
 
     public void eat() {
-
         System.out.println(name + " ест " + food + " " + location);
     }
 
@@ -40,9 +37,6 @@ public class Animal {
         return name;
     }
 
-    public String getAct() {
-        return act;
-    }
 }
 
 
