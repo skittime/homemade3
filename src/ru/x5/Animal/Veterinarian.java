@@ -1,4 +1,4 @@
-package partTwo.Animal;
+package ru.x5.Animal;
 
 public class Veterinarian extends Animal {
     public void treatAnimal(Animal animal) {

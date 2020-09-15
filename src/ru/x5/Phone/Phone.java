@@ -1,5 +1,5 @@
 
-package x5.Phone;
+package ru.x5.Phone;
 
 
 public class Phone {

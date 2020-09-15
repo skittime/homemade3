@@ -1,4 +1,4 @@
-package partTwo.Animal;
+package ru.x5.Animal;
 
 public class Horse extends Animal {
     String name = "Нюша", act = "ржёт", location = "в стойле", food = "овёс";
@@ -13,10 +13,6 @@ public class Horse extends Animal {
         return name;
     }
 
-    @Override
-    public String getAct() {
-        return act;
-    }
 
     @Override
     public String getLocation() {

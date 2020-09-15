@@ -1,4 +1,4 @@
-package partTwo.Animal;
+package ru.x5.Animal;
 
 public class Dog extends Animal {
     String name = "Шарик", act = "воет на луну", location = "в будке", food = "тапки";

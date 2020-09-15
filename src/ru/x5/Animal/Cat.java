@@ -1,4 +1,4 @@
-package partTwo.Animal;
+package ru.x5.Animal;
 
 public class Cat extends Animal {
     String name = "PushOK", act = "мяукает", location = "из миски", food = "мышей";
@@ -13,10 +13,7 @@ public class Cat extends Animal {
         return name;
     }
 
-    @Override
-    public String getAct() {
-        return act;
-    }
+
 
     @Override
     public String getLocation() {
