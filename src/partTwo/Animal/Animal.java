@@ -11,8 +11,8 @@ public class Animal {
         Horse horse = new Horse();
         Veterinarian veterinarian = new Veterinarian();
         Animal[] animals = new Animal[]{dog, cat, horse};
-        for (int i = 0; i < animals.length; i++) {
-            animal = animals[i];
+        for (Animal value : animals) {
+            animal = value;
             veterinarian.treatAnimal(animal);
         }
     }
