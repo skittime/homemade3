@@ -12,6 +12,10 @@ public class Aspirant extends Student {
         else {
             scholarship = 180;
         }
-        System.out.println(scholarship + " " + firstName);
+        System.out.println(scholarship + " " + getFirstName());
+    }
+
+    public String getFirstName() {
+        return firstName;
     }
 }

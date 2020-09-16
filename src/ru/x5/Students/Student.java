@@ -9,12 +9,13 @@ public class Student {
      Student student = new Aspirant();
      Student student3 = new Student();
     Student[] students1 = new Student[]{student,student3};
-        Student students2 = null;
-        for (int i = 0; i < students1.length; i++) {
-            students2=students1[i];
-            student.getScholarship(students2);
+        Student students2;
+        students2 = students1[0];
+        student.getScholarship(students2);
 
-        }
+        students2 = students1[1];
+        student.getScholarship(students2);
+
     }
     public void getScholarship(Student students2){
         if (averageMark == 5){
@@ -22,10 +23,10 @@ public class Student {
         }else {
             scholarship = 80;
         }
-        System.out.println(scholarship + " " + firstName);
+        System.out.println(scholarship + " " + getFirstName());
     }
 
-
-
-
+    public String getFirstName() {
+        return firstName;
+    }
 }
