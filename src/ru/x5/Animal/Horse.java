@@ -1,7 +1,12 @@
 package ru.x5.Animal;
 
 public class Horse extends Animal {
-    String name = "Нюша", act = "ржёт", location = "в стойле", food = "овёс";
+        public Horse(String food, String location, String name, String act) {
+            this.food = food;
+            this.location = location;
+            this.name = name;
+            this.act = act;
+        }
 
     public void eat() {
 

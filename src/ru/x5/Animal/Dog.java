@@ -1,27 +1,37 @@
 package ru.x5.Animal;
 
 public class Dog extends Animal {
-    String name = "Шарик", act = "воет на луну", location = "в будке", food = "тапки";
+    private final String food;
+    private final String location;
+    private final String name;
+    private final String act;
 
-    public String getName() {
-        return name;
+    public Dog(String food, String location, String name, String act) {
+        this.food = food;
+        this.location = location;
+        this.name = name;
+        this.act = act;
     }
 
-    public String getAct() {
-        return act;
+    public String getName() {
+
+        return name;
     }
 
 
     public String getLocation() {
+
         return location;
     }
 
     public String getFood() {
+
         return food;
     }
 
     @Override
     public void eat() {
+
         System.out.println(name + " грызет " + food);
     }
 
@@ -31,12 +41,5 @@ public class Dog extends Animal {
 
     }
 
-    public void getFood(String food) {
-        this.food = food;
-    }
-    //@Override
-    //public void treatAnimal(String animal) {
-    //    System.out.println(name + food + location);
 }
-
 

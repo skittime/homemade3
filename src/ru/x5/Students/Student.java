@@ -2,7 +2,7 @@ package ru.x5.Students;
 
 public class Student {
 
-    String firstName = "Петелькин" , lastName , group;
+    String firstName, lastName , group;
     double averageMark = 4;
     double scholarship;
     public static void main(String[] args) {

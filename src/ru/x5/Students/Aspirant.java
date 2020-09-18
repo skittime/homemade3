@@ -1,7 +1,6 @@
 package ru.x5.Students;
 
 public class Aspirant extends Student {
-     String firstName = "Пупкин";
 
     @Override
     public void getScholarship(Student students2) {

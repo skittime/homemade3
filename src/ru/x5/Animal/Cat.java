@@ -1,7 +1,13 @@
 package ru.x5.Animal;
 
 public class Cat extends Animal {
-    String name = "PushOK", act = "мяукает", location = "из миски", food = "мышей";
+
+    public Cat(String food, String location, String name, String act) {
+        this.food = food;
+        this.location = location;
+        this.name = name;
+        this.act = act;
+    }
 
     public void eat() {
 

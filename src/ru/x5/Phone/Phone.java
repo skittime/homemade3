@@ -3,38 +3,11 @@ package ru.x5.Phone;
 
 
 public class Phone {
-
-
-    public static void main(String[] args) {
-        Phone copy0 = new Phone();
-        Phone copy1 = new Phone();
-        Phone copy2 = new Phone();
-        System.out.println("Номер телефона: " + copy0.numberOfCall);
-        System.out.println("Модель телефона: " + copy1.model);
-        System.out.println("Вес телефона: " + copy2.weight);
-        copy0.receiveCall();
-        copy0.getNumber();
-        Phone methodPhone = new Phone();
-        methodPhone.receiveCall(999546456L, "Erzhan");
-        methodPhone.sendMessage(8498494984L, 65465465L, 1561656565L);
-    }
-
-    long numberOfCall = 9996478812L;
-    String model = "Samsung", name = "Alex";
-    double weight = 0.254;
-
-    public Phone(long numberOfCall, String model) {
-        this.numberOfCall = numberOfCall;
-        this.model = model;
-    }
-
-
-    public Phone() {
-
-    }
+    long numberOfCall;
+    String model, name;
+    double weight;
 
     public Phone(long numberOfCall, String model, double weight) {
-        this(64465466, "Apple");
         this.numberOfCall = numberOfCall;
         this.model = model;
         this.weight = weight;
@@ -54,6 +27,7 @@ public class Phone {
     }
 
     public void getNumber() {
+
         System.out.println(numberOfCall);
     }
 
