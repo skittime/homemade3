@@ -2,7 +2,7 @@ package ru.x5.Students;
 
 public class Student {
 
-    String firstName, lastName , group;
+    String firstName, lastName, group;
     double averageMark;
     double scholarship;
 
@@ -16,15 +16,15 @@ public class Student {
     public Student() {
     }
 
-    public void getScholarship () {
-            if (averageMark == 5) {
-                scholarship = 100;
-            } else {
-                scholarship = 80;
-            }
-            System.out.println(scholarship + " " + firstName + " " + lastName + " " + group);
+    public void getScholarship() {
+        if (averageMark == 5) {
+            scholarship = 100;
+        } else {
+            scholarship = 80;
         }
+        System.out.println(scholarship + " " + firstName + " " + lastName + " " + group);
     }
+}
 
 
 

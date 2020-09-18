@@ -12,8 +12,6 @@ public class Aspirant extends Student {
 
     @Override
     public void getScholarship() {
-
-        averageMark = 6;
         if (averageMark >= 5) {
             scholarship = 200;
         } else {
